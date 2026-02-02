@@ -91,20 +91,42 @@ section h3 {
 }
 
 .activity-card .participants ul {
-  list-style: disc;
-  margin-left: 18px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
   color: #37474f;
 }
 
 .activity-card .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 4px;
+  gap: 10px;
 }
 
 .activity-card .participants li.empty {
-  list-style: none;
-  margin-left: 0;
+  justify-content: flex-start;
   color: #90a4ae;
   font-style: italic;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.remove-participant {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 2px 4px;
+  color: #c62828;
+}
+
+.remove-participant:hover {
+  color: #8e0000;
 }
 
 .form-group {
